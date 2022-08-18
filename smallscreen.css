@@ -10,14 +10,14 @@
 body {
     font-family: 'Roboto';
     background-color: #E5E5E5;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .container {
     background-color: #fff;
     height: 100%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .body {
@@ -25,60 +25,61 @@ body {
     margin: 0 auto;
 }
 
-/*******************/
-/***** NAVBAR ******/
-/*******************/
 
-nav{
+/* NAV-BAR */
+nav {
+    /* border: 2px solid red; */
     position: relative;
-    top: 6px;
+    top: 3px;
+    background-color: #7030CC;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
-    background-color: #7030CC;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .nav-logo {
-    position: relative;
-    left: 50px
+    margin-left: 10px;
 }
 
 .nav-logo > img{
-    width: 80px;
+    width: 40px;
 }
 
 .list {
+    /* padding: 10px 0; */
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 450px;
-    position: relative;
-    left: 50px;
+    width: 55%;
+    /* width: 450px; */
+    /* position: relative; */
+    /* left: 50px; */
 }
 
 .list-items {
     list-style: none;
     color: #fff;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .nav-btn  {
-    width: 140px;
-    height: 52px;
+    width: 70px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     background-color: #1BBCEF;
     color: #fff;
-    font-weight: 700px;
-    font-size: 15px;
+    font-weight: 500px;
+    font-size: 8px;
     position: relative;
-    right: 100px
+    right: 7px
 }
 
 /*******************/
@@ -86,153 +87,147 @@ nav{
 /*******************/
 .top-section {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #7030CC;
-    height: 650px;
+    color: #fff;
+    padding-bottom: 20px;
 }
 
 .top-left {
-    position: relative;
-    left: 70px;
-    margin-top: 80px;
+    /* border: 1px solid lightgreen; */
     color: #fff;
     height: fit-content;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .top-title {
-    font-size: 55px;
-    line-height: 70px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 10px 0
+}
+
+.top-descr {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .top-right {
-    width: 700px;
-    height: fit-content;
-    position: relative;
-    left: 60px;
-    bottom: 20px;
+    width: 300px;
 }
 
 /**********************/
 /*** MIDDLE-SECTION ***/
 /**********************/
 
-.middle-section {
+.middle-section  {
+    /* border: 2px solid lightcoral; */
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    background-color: #fff;
-    height: 650px;
+
 }
 
 .middle-content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
     width: 100%;
 }
 
 .middle-right {
-    position: relative;
-    height: 600px;
+    /* border: 2px solid red; */
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 310px;
+    row-gap: 15px;
+    padding: 20px 0 0;
+}
+
+.middle-title {
+    /* text-align: center; */
+    /* border: 2px solid red;; */
+    padding: 0 20px;
 }
 
 .middle-descr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
+    /* border: 2px solid blue; */
 }
 
 .middle-card {
-    height: 100px;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 10px 20px;
+    row-gap: 5px;
 }
 
 .middle-head {
+    font-size: 12px;
     display: flex;
-    align-items: center;
 }
 
 .arrow {
-    width: 20px;
-    margin-right: 10px;
-}
-.middle-heading {
-    font-weight: 900;
+    width: 15px;
+    margin-right: 5px;
 }
 
 .middle-text {
-    font-size: 15px;
-    font-weight: 500;
-    text-align: right;
-    color: #1f1f1f
+    font-size: 12px;
+    padding-left: 20px;
 }
 
 .middle-left {
-     width: 600px;
-     height: fit-content;
-     position: relative;
-    
+    width: 300px;
 }
-
 
 /**********************/
 /*** LOWER-SECTION ***/
 /**********************/
 .lower-heading {
-    font-size: 30px;
+    margin-top: 20px;
+    /* border: 2px solid red; */
     text-align: center;
-    font-weight: 600;
-    margin-bottom: 40px;
-    color: #1c1c1c
 }
 
-
-/* CARD-SECTION */
 .cards {
+    /* border: 2px solid blue; */
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    padding-bottom: 10px;
-  }
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
 
-  .card {
-    height: 250px;
+.card {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 25px;
     background-color: #fff;
-    width: 200px;
-    box-shadow: 5px 5px 5px 1px #1c1c1c71;
-  }
+    height: 170px;
+    width: 150px;
+    box-shadow: 3px 3px 3px 1px #1c1c1c71;
+}
 
-  .card-active .content-container {
+.card-active .content-container {
     background-color: #6429B7;
     color: #fff;
   }
 
   .image-container {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     position: relative;
-    top: 10px
+    top: 10px;
   }
 
   .content-container {
@@ -242,15 +237,14 @@ nav{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 90px;
     position: relative;
-    top: 15px;
+    top: 7px;
     border-radius: 25px;
   }
-  
-  
-  .card-logo{
-    width: 50px;
+
+.card-logo{
+    width: 25px;
     z-index: 1;
     position: relative;
   }
@@ -267,12 +261,12 @@ nav{
   #cardl4{
     background-color: #F2E7F5;
   }
-  
+
   .card-head {
-    font-size: 23px;
-    position: relative;
-    bottom: 5px;
+    font-size: 15px;
+    /* position: relative;
+    bottom: 5px; */
   }
   .card-body {
-    font-size: 14px;
+    font-size: 10px;
   }
